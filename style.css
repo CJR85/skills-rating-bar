@@ -59,6 +59,7 @@ body {
   position: relative;
   display: flex;
   margin: 10px 0;
+  flex-direction: row-reverse;
 }
 
 .container .skills .rating input {
@@ -85,7 +86,14 @@ body {
   transition: 0.5s;
 }
 
-.container .skills .rating input:nth-child(2 + 1)::before {
+.container .skills .rating input:nth-child(2n + 1)::before {
   right: 4px;
-  left: 4px;
+  left: initial;
+}
+
+.container .skills .rating input:hover ~ input::before,
+.container .skills .rating input:hover::before,
+.container .skills .rating input:checked ~ input::before,
+.container .skills .rating input:checked::before {
+  color: #1f9cff;
 }
