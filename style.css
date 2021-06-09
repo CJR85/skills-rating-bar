@@ -33,3 +33,14 @@ body {
   font-weight: 500;
   color: #1f9cff;
 }
+
+.container .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
