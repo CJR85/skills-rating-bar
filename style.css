@@ -80,4 +80,12 @@ body {
   font-family: fontAwesome;
   font-size: 34px;
   position: absolute;
+  left: 4px;
+  color: #030b0f;
+  transition: 0.5s;
+}
+
+.container .skills .rating input:nth-child(2 + 1)::before {
+  right: 4px;
+  left: 4px;
 }
